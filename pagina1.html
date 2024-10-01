@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form action="">
+        <label for="primeiro_nome"> Primeiro nome:</label> <br>
+        <input  type="text"
+                name="primeiro_nome" required> <br> <br>
+
+        <label>Sobrenome:</label> <br>
+        <input type="text" name="sobrenome" required> <br> <br>
+
+        <label>Data de Nascimento:</label> <br>
+        <input type="date" name="dt_nasct" required> <br> <br>
+
+        <label> Hora de Nascimento:</label> <br>
+        <input type="time" name="hora_nasc" required> <br> <br>
+
+        <label> Sua Senha:</label> <br>
+        <input type="password" name="senha" required> <br> <br>
+
+        <label> Repita a Senha:</label> <br>
+        <input type="password" name="senha" required> <br> <br>
+
+        <label> Email:</label> <br>
+        <input type="email" name="email" required> <br> <br>
+
+        <label> Número da casa</label> <br>
+        <input type="number" name="num_casa"> <br> <br>
+
+        <label> Peso:</label> <br>
+        <input type="number"
+               step="0.01"
+               name="peso"
+               min="40.5"
+               max="50.1"> <br> <br>
+
+        <label> Telefone:</label> <br>
+        <input type="tele" name="celular"> <br> <br>
+
+        <label>Liguagens preferências:</label> <br>
+        <input type="checkbox" name="op_phyton"> Python <br>
+        <input type="checkbox" name="op_java"> Java <br>
+        <input type="checkbox" name="op_PHP"> PHP <br> <br>
+
+        <label>Gênero</label> <br>
+        <input type="radio" name="genero" value="masculino"> Masculino <br>
+        <input type="radio" name="genero" value="feminino"> Feminino <br>
+        <input type="radio" name="genero" value="outros"> Outros <br>
+        <input type="radio" name="genero" value="nspd"> Não sei/Prefiro não informar <br> <br>
+
+        <label>Endereço:</label> <br>
+        <textarea name="endereco" cols="30" rows="5"></textarea> <br> <br>
+
+        <label>Cor da camisa:</label> <br>
+        <input type="color" name="cor_camisa"> <br> <br>
+
+        <label>Foto(3x4)</label> <br>
+        <input type="file" name="arquivo_foto"> <br> <br>
+
+        <label>Curso:</label> <br>
+        <select name="curso_escolhido">
+            <option value="">Selecione</option>
+            <option value="op_ti">TI</option>
+            <option value="op_adm">ADM</option>
+            <option value="op_eng">Engenharia</option>
+        </select> <br> <br>
+
+        <label>Contribuição mensal:</label> <br>
+        <input type="range" min="50" max="6000"
+               value="5000"> <br> <br>
+
+        <input type="submit" value="Cadastrar">
+        <button type="submit">Enviar</button> <br> <br>
+        <input type="reset" value="Limpar formulário">
+        <button type="reset">Limpar Formulário</button>
+
+
+
+
+
+    </form>
+</body>
+</html>
